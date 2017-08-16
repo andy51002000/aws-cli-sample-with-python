@@ -9,6 +9,26 @@ This script is a pretty simple way to help you automatically create everything y
     "POLICY_NAME": "PubSubToAnyTopic"
 }
 ```
+* You can modify iotpolicy.json to change permissions if needed
+```sh
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iot:Publish",
+        "iot:Subscribe",
+        "iot:Connect",
+        "iot:Receive"
+      ],
+      "Resource": [
+        "*"
+      ]
+    }
+  ]
+}
+```
 # How to use it
 * python aws-cli-sample.py
 
