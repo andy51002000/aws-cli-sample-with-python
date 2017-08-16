@@ -24,3 +24,4 @@ obj/
 */obj
 secrete
 .vscode
+*.log
